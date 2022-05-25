@@ -12,88 +12,132 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Neuton:wght@200&family=Nunito:ital,wght@1,800&family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <div class="contenedor-sucursales">
+    <div>
         <header>
-            <div class="fotologo">
-                <img class="logo" src="../img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
-            <div>
-                <h1 class="titulo">Bodegas Bocuttis</h1>
+            <div class="text-center">
+                <img src="../img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
+            <div class="text-center text-uppercase text-light">
+                <h1>Bodegas Bocuttis</h1>
             </div>
         </header>
-        <div class="nav">
-            <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
-            <ul class="lista-menu">
-                <li class="item-menu"><a class="link-menu" href="../index.html">Home</a></li>
-                <li class="item-menu"><a class="link-menu" href="./quienesSomos.html">Quienes Somos</a></li>
-                <li class="item-menu"><a class="link-menu" href="./nuestrosProductos.html">Nuestros Productos</a>
-                </li>
-                <li class="item-menu"><a class="link-menu" href="./sucursales.html">Sucursales</a></li>
-                <li class="item-menu"><a class="link-menu" href="./contacto.html">Contacto</a></li>
-                <li class="item-menu"><a class="link-menu" href="#Redes">RSS</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" aria-current="page" href="./quienesSomos.html">Quienes
+                                Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./nuestrosProductos.html">Nuestros Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div>
+                <h2 class="text-center text-light fs-1">Nuestras Sucursales</h2>
+                <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum totam
+                    laborum officiis doloremque
+                    molestiae doloribus nulla at maxime cum maiores? Impedit, aspernatur! Accusantium corporis iure
+                    eveniet
+                    mollitia eius. Omnis illo debitis quam mollitia a nisi minus ratione consectetur sit? Exercitationem
+                    excepturi ea facilis ducimus obcaecati aliquam molestiae ullam vero quaerat eum hic magni nihil
+                    neque
+                    eos cupiditate quo, harum possimus quod enim. Nesciunt tempore, voluptatibus inventore delectus
+                    nostrum
+                    quae recusandae sequi magnam aliquid veritatis vitae provident sint ex. Ipsam, accusantium incidunt
+                    pariatur aliquam suscipit nulla? Repudiandae impedit quasi ex molestiae sint numquam, officia sed
+                    excepturi veniam, ullam aperiam nulla rerum.</p>
+            </div>
+            <div>
+                <h3 class="text-center text-light fs-1">Capital Federal</h3>
+                <div class="d-flex justify-content-md-center">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9173242082434!2d-58.37720858545267!3d-34.60625206513782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad2652789db%3A0x358b4e09e9a3b0e4!2sLigier%20Vinotecas!5e0!3m2!1ses-419!2sar!4v1651705203188!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-center text-light fs-1">Santa Fe</h3>
+                <div class="d-flex justify-content-md-center">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.046894836677!2d-60.65129998551641!3d-32.94977127937495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abdd4a7994f3%3A0x8b8c609de6d1362b!2sVinos%20%26%20Deli!5e0!3m2!1ses-419!2sar!4v1651705344539!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-center text-light fs-1">Cordoba</h3>
+                <div class="d-flex justify-content-md-center">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.833089885684!2d-65.02330808555321!3d-31.96542453021926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d5c12ec8226d%3A0xa53b89af18a9eaa0!2sVinos%20San%20Ramom!5e0!3m2!1ses-419!2sar!4v1651705393735!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+            <div>
+                <h3 class="text-center text-light fs-1">Mendoza</h3>
+                <div class="d-flex justify-content-md-center">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.833089885684!2d-65.02330808555321!3d-31.96542453021926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d5c12ec8226d%3A0xa53b89af18a9eaa0!2sVinos%20San%20Ramom!5e0!3m2!1ses-419!2sar!4v1651705393735!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
 
-
-        <div class="parrafo-suc">
-            <h2>Nuestras Sucursales</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum totam laborum officiis doloremque
-                molestiae doloribus nulla at maxime cum maiores? Impedit, aspernatur! Accusantium corporis iure eveniet
-                mollitia eius. Omnis illo debitis quam mollitia a nisi minus ratione consectetur sit? Exercitationem
-                excepturi ea facilis ducimus obcaecati aliquam molestiae ullam vero quaerat eum hic magni nihil neque
-                eos cupiditate quo, harum possimus quod enim. Nesciunt tempore, voluptatibus inventore delectus nostrum
-                quae recusandae sequi magnam aliquid veritatis vitae provident sint ex. Ipsam, accusantium incidunt
-                pariatur aliquam suscipit nulla? Repudiandae impedit quasi ex molestiae sint numquam, officia sed
-                excepturi veniam, ullam aperiam nulla rerum.</p>
-        </div>
-        <div class="capital">
-            <h3>Capital Federal</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9173242082434!2d-58.37720858545267!3d-34.60625206513782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad2652789db%3A0x358b4e09e9a3b0e4!2sLigier%20Vinotecas!5e0!3m2!1ses-419!2sar!4v1651705203188!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="santafe">
-            <h3>Santa Fe</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.046894836677!2d-60.65129998551641!3d-32.94977127937495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abdd4a7994f3%3A0x8b8c609de6d1362b!2sVinos%20%26%20Deli!5e0!3m2!1ses-419!2sar!4v1651705344539!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="cordoba">
-            <h3>Cordoba</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.833089885684!2d-65.02330808555321!3d-31.96542453021926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d5c12ec8226d%3A0xa53b89af18a9eaa0!2sVinos%20San%20Ramom!5e0!3m2!1ses-419!2sar!4v1651705393735!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="mendoza">
-            <h3>Mendoza</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.833089885684!2d-65.02330808555321!3d-31.96542453021926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d5c12ec8226d%3A0xa53b89af18a9eaa0!2sVinos%20San%20Ramom!5e0!3m2!1ses-419!2sar!4v1651705393735!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        </main>
 
         <footer>
-            <ul id="Redes">
-                <li><a href="https://www.instagram.com" target="blank"><img class="logo" src="../img/instagram.png"
-                            alt="instagram"></a>
-                </li>
-                <li><a href="https://www.facebook.com" target="blank"><img class="logo" src="../img/facebook.png"
-                            alt="facebook"></a>
-                </li>
-                <li><a href="https://www.twitter.com" target="blank"><img class="logo" src="../img/gorjeo.png"
-                            alt="facebook"></a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="https://www.facebook.com">
+                        <img src="../img/facebook.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="navbar-brand" href="https://www.instagram.com">
+                        <img src="../img/instagram.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="navbar-brand" href="https://www.twitter.com">
+                        <img src="../img/gorjeo.png" alt="" width="50" height="50">
+                    </a>
+                </div>
+            </nav>
         </footer>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

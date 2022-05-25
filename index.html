@@ -13,34 +13,60 @@
         href="https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Neuton:wght@200&family=Nunito:ital,wght@1,800&family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div>
         <header>
-            <div class="fotologo">
-                <img class="logo" src="./img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
-            <div>
-                <h1 class="titulo">Bodegas Bocuttis</h1>
+            <div class="text-center">
+                <img src="./img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
+            <div class="text-center text-uppercase text-light">
+                <h1>Bodegas Bocuttis</h1>
             </div>
         </header>
-        <div class="nav">
-            <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="boton-menu"><i class='bx bx-menu'></i></label>
-            <ul class="lista-menu">
-                <li class="item-menu"><a class="link-menu" href="./pages/quienesSomos.html">Quienes Somos</a></li>
-                <li class="item-menu"><a class="link-menu" href="./pages/nuestrosProductos.html">Nuestros Productos</a>
-                </li>
-                <li class="item-menu"><a class="link-menu" href="./pages/sucursales.html">Sucursales</a></li>
-                <li class="item-menu"><a class="link-menu" href="./pages/contacto.html">Contacto</a></li>
-                <li class="item-menu"><a class="link-menu" href="#Redes">RSS</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" aria-current="page" href="./pages/quienesSomos.html">Quienes
+                                Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./pages/nuestrosProductos.html">Nuestros Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./pages/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-        <div class="parrafo animate__animated animate__backInDown animate__slow">
-            <h2>Bienvenidos!</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem provident, harum corporis
+        <div class="container-fluid">
+            <h2 class="text-center text-light fs-1">Bienvenidos!</h2>
+            <p class="text-center text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem provident,
+                harum
+                corporis
                 repellat
                 saepe nulla dolore iste velit deleniti tenetur eius repellendus voluptate neque fugiat quod,
                 quis ex
@@ -54,29 +80,39 @@
                 nostrum
                 tenetur incidunt minima fugit exercitationem voluptates?</p>
         </div>
-        <div class="foto animate__animated animate__backInLeft animate__slow">
-            <img src=".//img/celebracion.jpg" alt="celebracion">
+        <div>
+            <img class="img-fluid rounded mx-auto d-block" src=".//img/celebracion.jpg" alt="celebracion">
         </div>
-        <div class="texto animate__animated animate__backInRight animate__slow">
-            <h2>Somos la bodega número uno del país</h2>
-            <p>Con más de 100 años de produccion ininterrumpida, recibimos el premio José Asturias por la
+        <div>
+            <h2 class="text-center text-light">Somos la bodega número uno del país</h2>
+            <p class="text-center text-light">Con más de 100 años de produccion ininterrumpida, recibimos el premio José
+                Asturias
+                por la
                 calidad de nuestras uvas, </p>
         </div>
 
+
         <footer>
-            <ul id="Redes">
-                <li><a href="https://www.instagram.com" target="blank"><img class="logo" src="./img/instagram.png"
-                            alt="instagram"></a>
-                </li>
-                <li><a href="https://www.facebook.com" target="blank"><img class="logo" src="./img/facebook.png"
-                            alt="facebook"></a>
-                </li>
-                <li><a href="https://www.twitter.com" target="blank"><img class="logo" src="./img/gorjeo.png"
-                            alt="facebook"></a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-light">
+                <div class="container">
+                  <a class="navbar-brand" href="https://www.facebook.com">
+                    <img src="./img/facebook.png" alt="" width="50" height="50">
+                  </a>
+                  <a class="navbar-brand" href="https://www.instagram.com">
+                    <img src="./img/instagram.png" alt="" width="50" height="50">
+                  </a>
+                  <a class="navbar-brand" href="https://www.twitter.com">
+                    <img src="./img/gorjeo.png" alt="" width="50" height="50">
+                  </a>
+                </div>
+              </nav>
         </footer>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
