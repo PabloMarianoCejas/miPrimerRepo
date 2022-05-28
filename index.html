@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Neuton:wght@200&family=Nunito:ital,wght@1,800&family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -22,27 +22,26 @@
     <div>
         <header>
             <div class="text-center">
-                <img src="./img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
+                <img class="logo" src="./img/logobocuttis3.jpg" alt="Logo Bodegas Bocuttis"></div>
             <div class="text-center text-uppercase text-light">
                 <h1>Bodegas Bocuttis</h1>
             </div>
         </header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menú</a>
+                <a class="navbar-brand" href="#">Menu</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-md-evenly" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fs-5 active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fs-5 active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5" aria-current="page" href="./pages/quienesSomos.html">Quienes
-                                Somos</a>
+                            <a class="nav-link fs-5" href="./pages/quienesSomos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="./pages/nuestrosProductos.html">Nuestros Productos</a>
@@ -55,14 +54,18 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
 
-        <div class="container-fluid">
+
+
+
+
+        <div class="container-fluid animate__animated animate__backInDown animate__slow">
             <h2 class="text-center text-light fs-1">Bienvenidos!</h2>
             <p class="text-center text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem provident,
                 harum
@@ -81,9 +84,10 @@
                 tenetur incidunt minima fugit exercitationem voluptates?</p>
         </div>
         <div>
-            <img class="img-fluid rounded mx-auto d-block" src=".//img/celebracion.jpg" alt="celebracion">
+            <img class="img-fluid rounded mx-auto d-block animate__animated animate__backInLeft animate__slow"
+                src=".//img/celebracion.jpg" alt="celebracion">
         </div>
-        <div>
+        <div class="animate__animated animate__backInRight animate__slow">
             <h2 class="text-center text-light">Somos la bodega número uno del país</h2>
             <p class="text-center text-light">Con más de 100 años de produccion ininterrumpida, recibimos el premio José
                 Asturias
@@ -95,17 +99,17 @@
         <footer>
             <nav class="navbar navbar-light">
                 <div class="container">
-                  <a class="navbar-brand" href="https://www.facebook.com">
-                    <img src="./img/facebook.png" alt="" width="50" height="50">
-                  </a>
-                  <a class="navbar-brand" href="https://www.instagram.com">
-                    <img src="./img/instagram.png" alt="" width="50" height="50">
-                  </a>
-                  <a class="navbar-brand" href="https://www.twitter.com">
-                    <img src="./img/gorjeo.png" alt="" width="50" height="50">
-                  </a>
+                    <a class="navbar-brand" href="https://www.facebook.com">
+                        <img class="footerlogo" src="./img/facebook.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="navbar-brand" href="https://www.instagram.com">
+                        <img class="footerlogo" src="./img/instagram.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="navbar-brand" href="https://www.twitter.com">
+                        <img class="footerlogo" src="./img/gorjeo.png" alt="" width="50" height="50">
+                    </a>
                 </div>
-              </nav>
+            </nav>
         </footer>
     </div>
 

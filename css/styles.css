@@ -1,12 +1,57 @@
-body{
+body {
     background-color: #305528;
 }
 
-header{
+header {
     background-color: #0D160B;
 }
 
-.vinito{
+footer {
+    background-image: linear-gradient(to top, #0D160B, #305528);
+}
+
+h2 p{
+    padding: 20px;
+}
+
+.vinito {
     margin: 10px;
     padding: 10px
+}
+
+.logo:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+iframe:hover{
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.footerlogo:hover{
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+li a:hover{
+    animation: pulse;
+    animation-duration: 2s;
+    background-color: #b1eea3;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .nuestra-historia {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    p {
+        font-size: 80%;
+    }
 }
