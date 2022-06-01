@@ -1,0 +1,68 @@
+@import "variables";
+
+
+body {
+    background-color: $verde;
+
+    header {
+        background-color: $verdeOscuro;
+
+        .logo:hover {
+            animation: bounce;
+            animation-duration: 2s;
+        }
+    }
+
+    nav{
+        li a:hover{
+            animation: pulse;
+            animation-duration: 2s;
+            background-color: $verdeClaro;
+        }
+    }
+
+    h2 p{
+        padding: 20px;
+    }
+
+    footer {
+        background-image: linear-gradient(to top, $verdeOscuro, $verde);
+
+        .footerlogo:hover{
+            animation: pulse;
+            animation-duration: 2s;
+        }
+    }
+
+    .sucursales{
+        iframe:hover{
+            animation: pulse;
+            animation-duration: 2s;
+        }
+    }
+
+    .nuestros-productos{
+        .vinito {
+            margin: 10px;
+            padding: 10px
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .nuestra-historia {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    p {
+        font-size: 80%;
+    }
+}
