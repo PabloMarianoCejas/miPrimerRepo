@@ -1,11 +1,23 @@
 @import "variables";
+@import "mixins";
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
 
 
 body {
-    background-color: $verde;
+    background-color: color(base);
 
     header {
-        background-color: $verdeOscuro;
+        background-color: color(oscuro);
+
+        .logo{
+            @include desktop{
+                max-width: 50%;
+                max-height: 50%;
+            }
+        }
 
         .logo:hover {
             animation: bounce;
@@ -17,20 +29,30 @@ body {
         li a:hover{
             animation: pulse;
             animation-duration: 2s;
-            background-color: $verdeClaro;
+            background-color: color(suave);
         }
     }
 
     h2 p{
         padding: 20px;
+        @include desktop{
+            font-size: 80%;
+        }
     }
 
     footer {
-        background-image: linear-gradient(to top, $verdeOscuro, $verde);
+        background-image: linear-gradient(to top, color(oscuro), color(base));
 
         .footerlogo:hover{
             animation: pulse;
             animation-duration: 2s;
+        }
+    }
+
+    .nuestra-historia{
+        @include desktop{
+            max-width: 50%;
+            max-height: 50%;
         }
     }
 
@@ -51,7 +73,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .logo {
         max-width: 50%;
         max-height: 50%;
@@ -65,4 +87,4 @@ body {
     p {
         font-size: 80%;
     }
-}
+} */

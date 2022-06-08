@@ -2,6 +2,10 @@ body {
   background-color: #305528; }
   body header {
     background-color: #0D160B; }
+    @media (max-width: 768px) {
+      body header .logo {
+        max-width: 50%;
+        max-height: 50%; } }
     body header .logo:hover {
       animation: bounce;
       animation-duration: 2s; }
@@ -11,11 +15,18 @@ body {
     background-color: #b1eea3; }
   body h2 p {
     padding: 20px; }
+    @media (max-width: 768px) {
+      body h2 p {
+        font-size: 80%; } }
   body footer {
     background-image: linear-gradient(to top, #0D160B, #305528); }
     body footer .footerlogo:hover {
       animation: pulse;
       animation-duration: 2s; }
+  @media (max-width: 768px) {
+    body .nuestra-historia {
+      max-width: 50%;
+      max-height: 50%; } }
   body .sucursales iframe:hover {
     animation: pulse;
     animation-duration: 2s; }
@@ -23,12 +34,18 @@ body {
     margin: 10px;
     padding: 10px; }
 
-@media (max-width: 768px) {
-  .logo {
-    max-width: 50%;
-    max-height: 50%; }
-  .nuestra-historia {
-    max-width: 50%;
-    max-height: 50%; }
-  p {
-    font-size: 80%; } }
+/* @media (max-width: 768px) {
+    .logo {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .nuestra-historia {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    p {
+        font-size: 80%;
+    }
+} */

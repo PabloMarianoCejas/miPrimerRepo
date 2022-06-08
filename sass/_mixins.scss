@@ -1,0 +1,8 @@
+@import 'variables';
+
+@mixin desktop{
+    @media (max-width:#{$desktop}){
+        @content;
+    }
+}
+
