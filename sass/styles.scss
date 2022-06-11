@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-@function color($color-name){
+@function color($color-name) {
     @return map-get($colors, $color-name)
 }
 
@@ -11,9 +11,11 @@ body {
 
     header {
         background-color: color(oscuro);
+        font-family: $font-title;
+        padding-bottom: 20px;
 
-        .logo{
-            @include desktop{
+        .logo {
+            @include desktop {
                 max-width: 50%;
                 max-height: 50%;
             }
@@ -25,66 +27,56 @@ body {
         }
     }
 
-    nav{
-        li a:hover{
-            animation: pulse;
-            animation-duration: 2s;
-            background-color: color(suave);
+    nav {
+        .menunav {
+            background-color: color(oscuro);
+            font-family: $font-title;
         }
-    }
 
-    h2 p{
-        padding: 20px;
-        @include desktop{
-            font-size: 80%;
+        li a:hover {
+                animation: pulse;
+                animation-duration: 2s;
+                background-color: color(suave);
+            }
         }
-    }
 
-    footer {
-        background-image: linear-gradient(to top, color(oscuro), color(base));
+        h2 p {
+            font-family: $font-body;
+            padding: 20px;
 
-        .footerlogo:hover{
-            animation: pulse;
-            animation-duration: 2s;
+            @include desktop {
+                font-size: 80%;
+            }
         }
-    }
 
-    .nuestra-historia{
-        @include desktop{
-            max-width: 50%;
-            max-height: 50%;
+        footer {
+            background-image: linear-gradient(to top, color(oscuro), color(base));
+
+            .footerlogo:hover {
+                animation: pulse;
+                animation-duration: 2s;
+            }
         }
-    }
 
-    .sucursales{
-        iframe:hover{
-            animation: pulse;
-            animation-duration: 2s;
+        .nuestra-historia {
+            @include desktop {
+                max-width: 50%;
+                max-height: 50%;
+            }
         }
-    }
 
-    .nuestros-productos{
-        .vinito {
-            margin: 10px;
-            padding: 10px
+        .sucursales {
+            iframe:hover {
+                animation: pulse;
+                animation-duration: 2s;
+            }
         }
+
+        .nuestros-productos {
+            .vinito {
+                margin: 10px;
+                padding: 10px
+            }
+        }
+
     }
-
-}
-
-
-/* @media (max-width: 768px) {
-    .logo {
-        max-width: 50%;
-        max-height: 50%;
-    }
-
-    .nuestra-historia {
-        max-width: 50%;
-        max-height: 50%;
-    }
-
-    p {
-        font-size: 80%;
-    }
-} */
